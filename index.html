@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohbbat Chicken Shop</title>
+  <style>
+    body { font-family: sans-serif; background: #fefefe; margin: 0; padding: 0; }
+    header { background: #e60000; color: white; padding: 1rem; text-align: center; }
+    section { padding: 1.5rem; border-bottom: 1px solid #ddd; }
+    h2 { color: #e60000; }
+    .btn { background: green; color: white; padding: 0.7rem 1rem; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 1rem; }
+    .price { font-size: 1.5rem; font-weight: bold; }
+    footer { text-align: center; padding: 1rem; background: #eee; font-size: 0.9rem; }
+    input[type='number'] { padding: 0.5rem; width: 100px; }
+    .admin-section { margin-top: 2rem; }
+  </style>
+  <script>
+    function updatePrice() {
+      const newPrice = document.getElementById("priceInput").value;
+      if(newPrice) {
+        document.getElementById("priceDisplay").innerText = `₹${newPrice}/kg`;
+      }
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>Mohbbat Chicken Shop</h1>
+  <p>Janghi Road, Handiya - Home Delivery Available</p>
+</header>
+
+<section>
+  <h2>Order Now on WhatsApp</h2>
+  <a class="btn" href="https://wa.me/918318793081?text=Hi%20Mohbbat%20Chicken%20Shop%2C%20Mujhe%20Chicken%20Order%20Karna%20Hai" target="_blank">WhatsApp पर ऑर्डर करें</a>
+</section>
+
+<section>
+  <h2>Today's Price</h2>
+  <p id="priceDisplay" class="price">₹160/kg</p>
+  <div class="admin-section">
+    <label>रेट बदलें:</label>
+    <input type="number" id="priceInput" placeholder="160">
+    <button class="btn" onclick="updatePrice()">अपडेट करें</button>
+  </div>
+</section>
+
+<section>
+  <h2>About Us</h2>
+  <p>Mohbbat Chicken Shop, Handiya का सबसे भरोसेमंद और प्रसिद्ध चिकन सेंटर है, जहाँ रोज़ाना 300+ ग्राहक आते हैं। हम ताज़गी, सफ़ाई और ग्राहक संतुष्टि में विश्वास रखते हैं। चाहे रिटेल हो या होलसेल – हमारे यहाँ हर ग्राहक की जरूरत पूरी होती है।</p>
+</section>
+
+<section>
+  <h2>Contact Us</h2>
+  <p>📞 8318793081</p>
+  <p>🏠 Janghi Road, Handiya, Prayagraj</p>
+  <p>🕒 सुबह 7 बजे से रात 10 बजे तक</p>
+</section>
+
+<footer>
+  &copy; 2025 Mohbbat Chicken Shop. All rights reserved.
+</footer>
+
+</body>
+</html>
